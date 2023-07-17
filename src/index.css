@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mainComponent{
+  width: 100%;
+}
+
+.mainComponent Tabs {
+  width: 100%;
+  align-self: center;
+}
+.mainComponent Button {
+  bottom: 10%;
+  right: 5%;
+  align-self: center;
+  position: fixed;
+}
+.add-button{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.calendar-list{
+  width: 90%;
+  overflow-wrap: anywhere;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  list-style-position: outside
+}
+.calendar-list-item{
+  max-width: 90%;
+  transition: text-decoration 0.4s 0s;
+  list-style-type: none;
+  overflow-wrap: "anywhere";
+}
+
+.calendar-list-item:hover{
+  text-decoration: underline;
+  
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #E2E29E; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FBEC5D; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F4BB44; 
+}
+
+
+@media screen and (max-width: 700px) {
+
+  body{
+    font-size: 12px;
+  }
+
+  .calendar-list{
+    line-height: 1em;
+  }
+}
